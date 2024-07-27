@@ -42,6 +42,19 @@
           "localUri": "annotations/annotation.xml"
         }
       }
+    },
+    "crossNavigation": {
+      "inbounds": {
+        "CPR-INVL": {
+          "semanticObject": "CPR",
+          "action": "INVL",
+          "title": "{{flpTitle}}",
+          "signature": {
+            "parameters": {},
+            "additionalParameters": "allowed"
+          }
+        }
+      }
     }
   },
   "sap.ui": {
@@ -135,7 +148,9 @@
               }
             },
             "tableSettings": {
-              "type": "GridTable"
+              "type": "GridTable",
+              "multiSelect": true,
+              "selectAll": true
             }
           }
         },
